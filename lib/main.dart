@@ -23,7 +23,7 @@ Future<void> main() async {
       tools: const [
         ...DevicePreview.defaultTools,
       ],
-      builder: (context) => const FlutterTemplate(),
+      builder: (context) => const MusicApp(),
     ),
   );
   SystemChrome.setSystemUIOverlayStyle(
@@ -35,14 +35,14 @@ Future<void> main() async {
   );
 }
 
-class FlutterTemplate extends StatefulWidget {
-  const FlutterTemplate({super.key});
+class MusicApp extends StatefulWidget {
+  const MusicApp({super.key});
 
   @override
-  State<FlutterTemplate> createState() => _FlutterTemplateState();
+  State<MusicApp> createState() => _MusicAppState();
 }
 
-class _FlutterTemplateState extends State<FlutterTemplate> {
+class _MusicAppState extends State<MusicApp> {
   late final ThemeCubit themeCubit;
   late final LanguageCubit languageCubit;
 
