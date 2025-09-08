@@ -92,7 +92,7 @@ void showToast({
     padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 12.0),
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(8.0),
-      color: secondaryColor,
+      color: AppColors.cardColor,
     ),
     child: Row(
       mainAxisSize: MainAxisSize.min,

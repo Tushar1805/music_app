@@ -9,7 +9,7 @@ import '../utils/core_utils.dart';
 import 'app_theme.dart';
 
 class ThemeCubit extends Cubit<ThemeData> {
-  ThemeCubit() : super(primaryTheme);
+  ThemeCubit() : super(darkTheme);
   ThemeData? theme;
   final storage = sl<SecureStorage>();
 

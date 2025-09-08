@@ -7,11 +7,11 @@ final ThemeData primaryTheme = ThemeData(
   // unselectedWidgetColor: Colors.white,
   appBarTheme: const AppBarTheme(
     titleTextStyle: TextStyle(color: Colors.white),
-    backgroundColor: primaryColor,
+    backgroundColor: AppColors.backgroundColor,
   ),
   cardTheme: const CardThemeData(color: Colors.white),
   bottomNavigationBarTheme: const BottomNavigationBarThemeData(backgroundColor: Colors.white),
-  textSelectionTheme: const TextSelectionThemeData(cursorColor: primaryColor),
+  textSelectionTheme: const TextSelectionThemeData(cursorColor: AppColors.backgroundColor),
   buttonTheme: ButtonThemeData(
     textTheme: ButtonTextTheme.primary,
     minWidth: double.infinity,
@@ -19,11 +19,11 @@ final ThemeData primaryTheme = ThemeData(
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
   ),
   colorScheme: ColorScheme(
-    tertiaryContainer: primaryColor,
+    tertiaryContainer: AppColors.backgroundColor,
     brightness: Brightness.light,
-    primary: primaryColor,
+    primary: AppColors.backgroundColor,
     onPrimary: Colors.white,
-    secondary: secondaryColor,
+    secondary: AppColors.backgroundColor,
     onSecondary: Colors.white,
     error: Colors.red,
     onError: Colors.red,
@@ -51,7 +51,7 @@ final ThemeData primaryTheme = ThemeData(
 );
 
 final ThemeData darkTheme = ThemeData(
-  scaffoldBackgroundColor: Colors.black38,
+  scaffoldBackgroundColor: AppColors.backgroundColor,
   unselectedWidgetColor: Colors.white,
   appBarTheme: const AppBarTheme(
     titleTextStyle: TextStyle(color: Colors.white),
