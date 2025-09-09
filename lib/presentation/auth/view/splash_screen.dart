@@ -1,12 +1,12 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
-import '../../../core/resources/app_colors.dart';
-import '../../../core/resources/app_images.dart';
-import '../../../routes/app_routes.dart';
+import 'package:music_app/core/resources/app_colors.dart';
+import 'package:music_app/core/resources/app_images.dart';
+import 'package:music_app/routes/app_routes.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -20,12 +20,12 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: 3), () {
-      context.go(homeScreen);
+      context.go(signUpScreen);
     });
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final size = MediaQuery.of(context).size;
 
     return Scaffold(

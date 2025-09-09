@@ -1,6 +1,5 @@
-
 import 'package:flutter/material.dart';
-import 'resources/shared_app_strings.dart';
+import 'package:music_app/core/resources/shared_app_strings.dart';
 
 class Loading extends StatelessWidget {
   const Loading({super.key, this.loadingMessage});
@@ -48,13 +47,13 @@ class LoadingWithoutText extends StatelessWidget {
 }
 
 class LoadingScreen extends StatelessWidget {
-  const LoadingScreen({super.key,});
+  const LoadingScreen({
+    super.key,
+  });
 
   @override
   Widget build(final BuildContext context) => Container(
-        color: Theme.of(context).brightness == Brightness.light
-            ? Colors.white
-            : Colors.black,
+        color: Theme.of(context).brightness == Brightness.light ? Colors.white : Colors.black,
         constraints: const BoxConstraints.expand(),
         child: Center(
           child: CircularProgressIndicator(

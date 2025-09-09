@@ -1,7 +1,7 @@
+import 'package:get_it/get_it.dart';
 import 'package:music_app/core/localization/language_cubit.dart';
 import 'package:music_app/core/resources/app_storage.dart';
 import 'package:music_app/core/theme/theme_cubit.dart';
-import 'package:get_it/get_it.dart';
 import 'package:music_app/presentation/auth/cubit/auth_cubit.dart';
 import 'package:music_app/presentation/auth/repo/auth_repo.dart';
 

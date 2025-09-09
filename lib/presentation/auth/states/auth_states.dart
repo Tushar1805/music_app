@@ -1,4 +1,4 @@
-import '../../../datasource/states/data_state.dart';
+import 'package:music_app/datasource/states/data_state.dart';
 
 class AuthLoadingState extends LoadingState {
   AuthLoadingState(super.loadingMessage);

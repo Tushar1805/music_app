@@ -3,9 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-
-import '../resources/app_colors.dart';
-import '../resources/app_images.dart';
+import 'package:music_app/core/resources/app_colors.dart';
+import 'package:music_app/core/resources/app_images.dart';
 
 // void showToast(final String message) {
 //   Fluttertoast.showToast(
@@ -100,7 +99,7 @@ void showToast({
         CircleAvatar(
           radius: 12,
           child: Image.asset(
-           AppImages.appLogoIcon,
+            AppImages.appLogoIcon,
             width: 24,
             height: 24,
           ),

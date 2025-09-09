@@ -6,8 +6,7 @@ class SecureStorage {
       );
 
   IOSOptions _getIOSOptions() => const IOSOptions(
-        // TODO: Add your project name here
-        accountName: 'flutter_secure_storage',
+        accountName: 'music_app',
       );
 
   Future<void> saveValue({required final String? value, required final String key}) async {

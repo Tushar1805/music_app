@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:music_app/core/resources/app_colors.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:music_app/core/resources/app_colors.dart';
 
 final ThemeData primaryTheme = ThemeData(
   scaffoldBackgroundColor: Colors.white,
@@ -55,12 +55,18 @@ final ThemeData darkTheme = ThemeData(
   unselectedWidgetColor: Colors.white,
   appBarTheme: const AppBarTheme(
     titleTextStyle: TextStyle(color: Colors.white),
-    backgroundColor: Colors.black,
+    backgroundColor: AppColors.cardColor,
   ),
   cardTheme: const CardThemeData(
     //color: cardColor,
-    color: Colors.white,
+    color: AppColors.cardColor,
   ),
+  inputDecorationTheme: InputDecorationThemeData(
+      enabledBorder:
+          const OutlineInputBorder(borderSide: BorderSide(color: AppColors.borderColor, width: 3)),
+      focusedBorder:
+          const OutlineInputBorder(borderSide: BorderSide(color: AppColors.gradient2, width: 3)),
+          ),
   textSelectionTheme: const TextSelectionThemeData(cursorColor: Colors.white),
   bottomNavigationBarTheme: const BottomNavigationBarThemeData(backgroundColor: Colors.black),
   buttonTheme: ButtonThemeData(
